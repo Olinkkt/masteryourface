@@ -10,7 +10,7 @@ const Footer = () => {
               MASTER YOUR FACE
             </p>
             <p className="text-sm text-muted-foreground">
-              © 2024 Hristina Georgievska. Všechna práva vyhrazena.
+              © {new Date().getFullYear()} Hristina Georgievska. Všechna práva vyhrazena.
             </p>
           </div>
 

@@ -66,9 +66,6 @@ export const Showcase = ({ items = defaultShowcaseItems }: ShowcaseProps) => {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Showcase</h2>
-            <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-              Explore our work and see the transformative results of our courses and services.
-            </p>
           </div>
 
           <Carousel

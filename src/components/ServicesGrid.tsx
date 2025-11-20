@@ -8,22 +8,22 @@ import { Link } from "react-router-dom";
 
 const services = [
   {
-    title: "Public Courses",
-    description: "Join our group sessions and master facial massage techniques in a supportive, professional environment. Perfect for individuals seeking personal growth and new skills.",
+    title: "MASTER YOUR FACE — Individual",
+    description: "Objevte make-up, který konečně dává smysl — jednoduchý, přirozený a použitelný v běžném životě.",
     image: servicePublic,
     icon: Users,
     link: "/public-courses",
   },
   {
-    title: "Corporate Wellness",
-    description: "Bring wellness to your workplace with customized facial massage workshops. Boost team morale and introduce valuable self-care practices to your employees.",
+    title: "MASTER YOUR FACE — Business",
+    description: "Firemní workshop make-upu — praktický zážitek, který zaměstnankyním přidá sebevědomí a profesionální vzhled.",
     image: serviceCorporate,
     icon: Building2,
     link: "/corporate-wellness",
   },
   {
-    title: "Portrait Photography",
-    description: "Capture your beauty with professional portrait sessions. Elegant, timeless photography that showcases your confidence and natural radiance.",
+    title: "MASTER YOUR IMAGE — Portraits",
+    description: "Profesionální portréty přímo ve firmě — rychlé, bez přesunů, přirozené a reprezentativní.",
     image: servicePhotography,
     icon: Camera,
     link: "/portrait-photography",
@@ -39,19 +39,16 @@ export const ServicesGrid = () => {
     <section id="services" className="section-padding bg-background">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h2>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            Choose the perfect course or service to begin your journey towards mastering facial wellness.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Nabídka služeb</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {services.map((service, index) => (
             <Card
               key={index}
-              className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300"
+              className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/3] overflow-hidden flex-shrink-0">
                 <img
                   src={service.image}
                   alt={service.title}
@@ -62,9 +59,9 @@ export const ServicesGrid = () => {
                   <service.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
               </div>
-              <CardContent className="p-6 md:p-8">
+              <CardContent className="p-6 md:p-8 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
-                <p className="text-text-secondary mb-6 leading-relaxed">
+                <p className="text-text-secondary mb-6 leading-relaxed flex-1">
                   {service.description}
                 </p>
                 <div className="flex gap-3">

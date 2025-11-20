@@ -7,28 +7,44 @@ import {
 
 const faqs = [
   {
-    question: "What experience level do I need for the courses?",
-    answer: "No prior experience is necessary! Our courses are designed for all levels, from complete beginners to those looking to refine their techniques. We provide comprehensive instruction and hands-on practice for everyone.",
+    question: "Je workshop vhodný i pro úplné začátečnice?",
+    answer: "Ano. Workshop je navržený tak, aby vše zvládla i žena, která se běžně nelíčí. Postupuje se krok po kroku, společně, v klidném tempu — nikdo se neztratí a každý krok Hristina osobně zkontroluje.",
   },
   {
-    question: "How long are the courses?",
-    answer: "Course duration varies by program. Public courses typically run 4-8 weeks with weekly sessions, while corporate workshops can be customized from half-day to full-day formats based on your team's needs.",
+    question: "Co si mám na workshop přinést?",
+    answer: "Stačí vaše běžná kosmetika, se kterou pracujete doma. Pokud něco chybí, doplníme vše na místě — včetně make-upu Armani Beauty.",
   },
   {
-    question: "Do you provide course materials?",
-    answer: "Yes! All participants receive professional course materials including technique guides, practice tools, and digital resources. Everything you need to master the techniques is included in your course fee.",
+    question: "Mohu používat vlastní kosmetiku?",
+    answer: "Ano, je to dokonce doporučené. Hristina vám přímo během workshopu ukáže, jak vaše produkty používat tak, aby fungovaly co nejlépe.",
   },
   {
-    question: "Can I book a private session?",
-    answer: "Absolutely! We offer private one-on-one sessions for both facial massage training and portrait photography. Contact us to discuss your specific needs and schedule a personalized session.",
+    question: "Kolik žen může být v jedné skupině?",
+    answer: "Ideální počet je 10–20 žen. Díky tomu se Hristina může věnovat každé individuálně a workshop má příjemné, osobní tempo.",
   },
   {
-    question: "What makes your approach unique?",
-    answer: "We combine professional expertise with a holistic approach to facial wellness. Our methods are research-backed, our instruction is personalized, and we focus on sustainable techniques you can use for life.",
+    question: "Jak dlouho předem je potřeba rezervovat termín?",
+    answer: "U individuálních workshopů doporučujeme 2–4 týdny předem. Firemní workshopy a portréty je dobré rezervovat alespoň 4–6 týdnů dopředu.",
   },
   {
-    question: "Is there a certification upon completion?",
-    answer: "Yes! Graduates of our comprehensive courses receive a professional certificate of completion, recognizing your mastery of facial massage techniques. This certificate demonstrates your commitment to professional wellness practices.",
+    question: "Líčí Hristina každou ženu individuálně?",
+    answer: "Ano. Po každém kroku Hristina projde všechny účastnice, upraví techniku, doporučí vhodný způsob aplikace a dává osobní doporučení.",
+  },
+  {
+    question: "Je možné uspořádat firemní workshop i mimo Prahu?",
+    answer: "Ano. Workshop je možné realizovat v Brně, Ostravě a dalších městech podle domluvy.",
+  },
+  {
+    question: "Jak probíhá portrétní focení ve firmě?",
+    answer: "Tým přijede přímo k vám a připraví mobilní ateliér — světla, pozadí, beauty zónu i styling. Zaměstnanci se fotí v rámci pracovního dne, bez přesunů a bez narušení provozu. Výsledek je jednotný, profesionální a přirozený.",
+  },
+  {
+    question: "Je možné kombinovat firemní workshop a portréty v jednom dni?",
+    answer: "Ano, podle kapacity týmu to lze. Často se workshop dopoledne kombinuje s portréty odpoledne.",
+  },
+  {
+    question: "Nabízíte i čistě individuální lekce pro jednu osobu?",
+    answer: "Ano. Individuální \"one-to-one\" lekce jsou možné podle domluvy a probíhají ve stejném klidném, praktickém formátu.",
   },
 ];
 
@@ -37,10 +53,7 @@ export const FAQ = () => {
     <section className="section-padding bg-background-secondary">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Frequently Asked Questions</h2>
-          <p className="text-lg text-text-secondary max-w-2xl mx-auto">
-            Everything you need to know about our courses and services.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">Často kladené otázky</h2>
         </div>
 
         <div className="max-w-3xl mx-auto">

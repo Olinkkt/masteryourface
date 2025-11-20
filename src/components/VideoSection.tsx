@@ -1,38 +1,59 @@
-import { Button } from "@/components/ui/button";
-
 export const VideoSection = () => {
-  const scrollToServices = () => {
-    document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section id="video-section" className="section-padding bg-background-secondary">
       <div className="container-custom">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Discover the Art of Facial Massage
-          </h2>
-          <p className="text-lg text-text-secondary mb-12 max-w-2xl mx-auto">
-            Watch how professional facial massage techniques can transform your skin and boost your confidence.
-          </p>
-
-          <div className="aspect-video w-full rounded-lg overflow-hidden shadow-2xl mb-12">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Master Your Face Introduction Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
+        <div className="grid gap-12 md:grid-cols-2 items-center">
+          <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl min-h-[320px] bg-muted">
+            <img
+              src="/images/hristina-georgievska.jpg"
+              alt="Hristina Georgievska"
+              className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
 
-          <Button
-            onClick={scrollToServices}
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300"
-          >
-            View Our Courses
-          </Button>
+          <div className="space-y-8">
+            <header>
+              <p className="text-sm uppercase tracking-[0.3em] text-muted-foreground mb-3">
+                O Hristině a MASTER YOUR FACE
+              </p>
+              <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+                Hristina Georgievska
+              </h2>
+            </header>
+
+            <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+              <div className="space-y-4">
+                <p>
+                  Make-up artistka s více než 25 lety zkušeností napříč módními editoriály,
+                  televizními projekty a českými i mezinárodními kampaněmi. Spolupracovala se světovými
+                  značkami jako Dior, Jean Paul Gaultier, Vivienne Westwood i s předními českými
+                  produkcemi. Líčila osobnosti jako Tereza Maxová, Karolína Kurková, Daniela Peštová či
+                  Eva Herzigová a v rámci své práce se setkala i s významnými světovými osobnostmi —
+                  například prezidentem Georgem W. Bushem. Pravidelně působí na MFF Karlovy Vary a
+                  dlouhodobě spolupracuje jako ambasadorka značek WELEDA a ARMANI BEAUTY.
+                </p>
+                <p className="italic text-foreground">
+                  „Make-up pro mě není maska, ale nástroj sebevědomí.“
+                </p>
+                <p>
+                  Je známá svým citem pro přirozenost, detail a osobní přístup, díky kterému dokáže
+                  podtrhnout krásu a autenticitu každé ženy.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-foreground">MASTER YOUR FACE</h3>
+                <p>
+                  Master Your Face je autorský beauty koncept Hristiny Georgievské, který propojuje
+                  její dlouholeté zkušenosti z módního a vizuálního světa s osobním přístupem k výuce a
+                  reprezentaci. Koncept zahrnuje individuální make-up kurzy, firemní beauty vzdělávání
+                  a profesionální portréty. Učí ženy i firmy pracovat s líčením tak, aby působily
+                  přirozeně, sebevědomě a reprezentativně — v každodenním i pracovním životě.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
