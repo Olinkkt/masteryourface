@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import { BackToTop } from "@/components/BackToTop";
-import { ScrollReveal } from "@/components/ScrollReveal";
 import { Clock, MapPin, Package, Users, Sparkles, CheckCircle2, UsersRound, Palette, Sparkle, Target, Building2, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import serviceCorporate from "@/assets/service-corporate.jpg";
@@ -20,8 +19,7 @@ export default function CorporateWellness() {
 
       {/* About the Course */}
       <section id="about" className="section-padding bg-background">
-        <ScrollReveal>
-          <div className="container mx-auto max-w-6xl px-6 md:px-8">
+        <div className="container mx-auto max-w-6xl px-6 md:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">MASTER YOUR FACE — Business</h2>
@@ -68,13 +66,11 @@ export default function CorporateWellness() {
             </div>
           </div>
         </div>
-        </ScrollReveal>
       </section>
 
       {/* Jak workshop probíhá */}
       <section className="section-padding bg-background-secondary">
-        <ScrollReveal>
-          <div className="container mx-auto max-w-6xl px-6 md:px-8">
+        <div className="container mx-auto max-w-6xl px-6 md:px-8">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Jak workshop probíhá</h2>
             <p className="text-lg text-text-secondary mb-12">
               Workshop je klidný, přehledný a maximálně praktický. Nikdo se neztratí, nikdo nečeká — všechny postupují společně.
@@ -146,7 +142,6 @@ export default function CorporateWellness() {
                 </div>
               </div>
           </div>
-        </ScrollReveal>
       </section>
 
       <BackToTop />

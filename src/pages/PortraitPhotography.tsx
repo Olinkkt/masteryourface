@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import { BackToTop } from "@/components/BackToTop";
-import { ScrollReveal } from "@/components/ScrollReveal";
 import { Clock, MapPin, Package, Camera, ArrowLeft, CheckCircle2, Image, Building2, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
 import servicePhotography from "@/assets/service-photography.jpg";
@@ -20,8 +19,7 @@ export default function PortraitPhotography() {
 
       {/* About the Service */}
       <section id="about" className="section-padding bg-background">
-        <ScrollReveal>
-          <div className="container-custom">
+        <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">MASTER YOUR IMAGE — Portraits</h2>
@@ -62,7 +60,6 @@ export default function PortraitPhotography() {
             </div>
           </div>
         </div>
-        </ScrollReveal>
       </section>
 
       <BackToTop />

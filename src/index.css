@@ -64,6 +64,11 @@ All colors MUST be HSL.
   }
   
   html {
+    /* scroll-behavior: smooth; - odstraněno */
+  }
+  
+  /* Smooth scroll pouze pro anchor linky */
+  html:has(a[href^="#"]:focus) {
     scroll-behavior: smooth;
   }
 }
