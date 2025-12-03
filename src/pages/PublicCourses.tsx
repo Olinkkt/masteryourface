@@ -158,6 +158,9 @@ export default function PublicCourses() {
           
           {isLoading && <p className="text-center text-lg text-text-secondary">Načítání termínů...</p>}
           {error && <p className="text-center text-lg text-red-500">Nepodařilo se načíst termíny.</p>}
+          {!isLoading && !error && courses?.length === 0 && (
+            <p className="text-left text-lg text-text-secondary">Nejsou žádné nadcházející kurzy.</p>
+          )}
           
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {courses?.map((course) => (
