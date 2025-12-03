@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { BackToTop } from "@/components/BackToTop";
 import { Clock, MapPin, Package, Camera, ArrowLeft, CheckCircle2, Image, Building2, Sparkles } from "lucide-react";
@@ -61,6 +62,8 @@ export default function PortraitPhotography() {
           </div>
         </div>
       </section>
+
+      <Contact showHeading={false} />
 
       <BackToTop />
       <Footer />

@@ -6,7 +6,11 @@ import { Label } from "@/components/ui/label";
 import { Mail, Phone, Instagram } from "lucide-react";
 import { toast } from "sonner";
 
-const Contact = () => {
+interface ContactProps {
+  showHeading?: boolean;
+}
+
+const Contact = ({ showHeading = true }: ContactProps) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -50,9 +54,11 @@ const Contact = () => {
   return (
     <section id="kontakt" className="py-24 px-6 bg-background">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="font-serif text-4xl md:text-5xl font-semibold text-center mb-16">
-          Kontakt
-        </h2>
+        {showHeading && (
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold text-center mb-16">
+            Kontakt
+          </h2>
+        )}
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}

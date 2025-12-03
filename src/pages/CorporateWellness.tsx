@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import { BackToTop } from "@/components/BackToTop";
 import { Clock, MapPin, Package, Users, Sparkles, CheckCircle2, UsersRound, Palette, Sparkle, Target, Building2, ArrowLeft } from "lucide-react";
@@ -143,6 +144,8 @@ export default function CorporateWellness() {
               </div>
           </div>
       </section>
+
+      <Contact showHeading={false} />
 
       <BackToTop />
       <Footer />
