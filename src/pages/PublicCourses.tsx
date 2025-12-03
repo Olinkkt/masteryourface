@@ -149,6 +149,78 @@ export default function PublicCourses() {
           </div>
       </section>
 
+      {/* Upcoming Courses */}
+      <section id="dates" className="section-padding bg-background">
+        <div className="container mx-auto max-w-6xl px-6 md:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-left">Nadcházející termíny</h2>
+          
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {/* Placeholder Item 1 */}
+            <div className="bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex justify-between items-start mb-4">
+                <div className="flex items-center gap-2 text-primary">
+                  <MapPin className="w-5 h-5" />
+                  <span className="font-semibold">Praha</span>
+                </div>
+                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                  Volná místa
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">15. Března 2024</h3>
+              <div className="flex items-center gap-2 text-text-secondary mb-6">
+                <Clock className="w-4 h-4" />
+                <span>10:00 - 15:00</span>
+              </div>
+              <button className="w-full py-3 px-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                Rezervovat místo
+              </button>
+            </div>
+
+            {/* Placeholder Item 2 */}
+            <div className="bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex justify-between items-start mb-4">
+                <div className="flex items-center gap-2 text-primary">
+                  <MapPin className="w-5 h-5" />
+                  <span className="font-semibold">Brno</span>
+                </div>
+                <span className="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-medium">
+                  Obsazeno
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">22. Března 2024</h3>
+              <div className="flex items-center gap-2 text-text-secondary mb-6">
+                <Clock className="w-4 h-4" />
+                <span>10:00 - 15:00</span>
+              </div>
+              <button disabled className="w-full py-3 px-4 bg-gray-200 text-gray-500 rounded-lg font-medium cursor-not-allowed">
+                Plně obsazeno
+              </button>
+            </div>
+
+            {/* Placeholder Item 3 */}
+            <div className="bg-background border border-border rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="flex justify-between items-start mb-4">
+                <div className="flex items-center gap-2 text-primary">
+                  <MapPin className="w-5 h-5" />
+                  <span className="font-semibold">Ostrava</span>
+                </div>
+                <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                  Volná místa
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-2">5. Dubna 2024</h3>
+              <div className="flex items-center gap-2 text-text-secondary mb-6">
+                <Clock className="w-4 h-4" />
+                <span>10:00 - 15:00</span>
+              </div>
+              <button className="w-full py-3 px-4 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors">
+                Rezervovat místo
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <BackToTop />
       <Footer />
     </div>
